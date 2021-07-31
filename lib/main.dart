@@ -46,17 +46,21 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Container(
-              child: Center(
-                  child: Text("Marianne",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold))),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Colors.blue,
+            Card(
+              elevation: 5,
+              child: Container(
+                child: Center(
+                    child: Text("Marianne",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold))),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.blue,
+                  //boxShadow: [BoxShadow(color: Colors.black12,spreadRadius: 5)]
+                ),
+                width: 100,
+                height: 100,
               ),
-              width: 100,
-              height: 100,
             ),
             Container(
               decoration: BoxDecoration(
